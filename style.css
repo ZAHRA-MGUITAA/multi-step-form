@@ -439,6 +439,7 @@ span.planprice.yearly {
   display: none;
   width: 380px;
   display: none;
+  line-height: 60px;
 }
 .thankyou h4 {
   font-size: 32px;
@@ -446,14 +447,25 @@ span.planprice.yearly {
 }
 .thankyou p {
   color: var(--Marine-blue);
+  line-height: 32px;
 }
 
 @media (max-width: 620px) {
+  .container {
+    width: 100%;
+  }
+  .thankyou {
+    /* transform: translate(50%, 50%); */
+    transform: translate(0%, 3%);
+  }
+  .thankyou {
+    margin: 40px auto 70px;
+  }
   .main {
     display: flex;
     flex-direction: column;
     width: fit-content;
-    padding: 10px;
+    padding: 22px;
     height: auto;
   }
   .sidebar div div {
